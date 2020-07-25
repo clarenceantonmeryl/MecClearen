@@ -1,0 +1,64 @@
+#:kivy 1.0.9
+
+<Robot>:
+    size: 20, 20
+    canvas:
+        Color:
+            rgba: 0.7529, 0.7529, 0.7529, 1
+        PushMatrix
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Ellipse:
+            pos: self.pos
+            size: self.size
+        PopMatrix
+
+<Sensor_Centre>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1, 1, 0, 1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            
+<Sensor_Left>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1, 0.7490, 0, 1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Sensor_Right>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1, 0.7490, 0, 1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<MecClearen>:
+    robot: game_robot
+    sensor_centre: game_sensor_centre
+    sensor_left: game_sensor_left
+    sensor_right: game_sensor_right
+
+    Robot:
+        id: game_robot
+        center: self.parent.center
+        
+    Sensor_Centre:
+        id: game_sensor_centre
+        center: self.parent.center
+        
+    Sensor_Left:
+        id: game_sensor_left
+        center: self.parent.center
+        
+    Sensor_Right:
+        id: game_sensor_right
+        center: self.parent.center
