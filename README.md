@@ -1,7 +1,9 @@
 # MecClearen
 MecClearen AI Robotics. STS JC-1-1152. Clarence Antonmeryl. Haileybury Berwick.
 
-Video: https://bit.ly/MecClearen-Video
+Overview Video: https://bit.ly/MecClearen-Video
+
+Detailed Video: Video: https://bit.ly/MecClearen-Video-Detail
 
 Report: https://bit.ly/MecClearen-Report
 
